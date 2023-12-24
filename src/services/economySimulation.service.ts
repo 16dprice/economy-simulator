@@ -1,5 +1,4 @@
-import { Economy } from "../models/economy";
-import { Transaction } from "../models/transaction";
+import { Economy, Transaction } from "../models/models";
 
 export class EconomySimulationService {
   conductTransaction(economy: Economy, transaction: Transaction): Economy {

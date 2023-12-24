@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
-import { Economy } from "../models/economy";
-import { Entity } from "../models/entity";
+import { Economy } from "../models/models";
 
 export const getInitialEconomy = async (): Promise<Economy> => {
   const scenarioFilePath = process.env.SCENARIO_DATA_FILE_PATH;
@@ -9,7 +8,7 @@ export const getInitialEconomy = async (): Promise<Economy> => {
   const file = Bun.file(scenarioFilePath);
   const contents = await file.json<{ entities: Array<{ money: number }> }>();
 
-  const economy: Economy = { entities: {} };
+  const economy: Economy = { id: uuidv4(), entities: {} };
   contents.entities.forEach((entityInfo) => {
     const id = uuidv4();
 

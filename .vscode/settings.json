@@ -2,22 +2,22 @@
   "editor.tabSize": 2,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.formatOnSave": true,
   "typescript.tsdk": "node_modules/typescript/lib"
